@@ -1,0 +1,186 @@
+@import url("reset.css");
+
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+
+.loginBody {
+    font-family: 'Overpass', sans-serif;
+    min-height: 100vh;
+    background-color: #BFEEB7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Login Card */
+.loginCard {
+    width: 450px;
+    background: rgb(255, 255, 255);
+    padding: 4rem;
+    border-radius: 50px;
+    position: relative;
+    filter: drop-shadow(0 0 0.3rem rgba(0, 0, 0, 0.308));
+}
+
+/* ---------- */
+
+/* Login Card Logo */
+.loginCardLogo {
+    margin-bottom: 2rem;
+}
+
+.loginCardLogo img {
+    width: 60px;
+}
+/* ---------- */
+
+/* Login Card Standard */
+.loginCardLogo,
+.loginCardHeader,
+.loginCardFooter {
+    text-align: center;
+}
+
+.loginCard a {
+    text-decoration: none;
+    color: #35339a;
+}
+
+.loginCard a:hover {
+    text-decoration: underline;
+}
+/* ---------- */
+
+/* Login Card Header */
+.loginCardHeader {
+    margin-bottom: 2rem;
+}
+
+.loginCardHeader h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: .5rem;
+}
+
+.loginCardHeader h1+div {
+    font-size: calc(1rem * .8);
+    opacity: .8;
+}
+/* ---------- */
+
+/* Login Card Form */
+.loginCardForm {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.loginCardForm .formItem {
+    position: relative;
+}
+
+.loginCardForm .formItem .formItemIcon {
+    position: absolute;
+    top: .82rem;
+    left: 1.4rem;
+    font-size: 1.3rem;
+    opacity: .4;
+}
+
+.loginCardForm .checkbox {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.loginCardForm .formItemOther {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: calc(1rem * .8);
+    margin-bottom: .5rem;
+}
+/* ---------- */
+
+/* Login Card Footer */
+.loginCardFooter {
+    margin-top: 1.5rem;
+    font-size: calc(1rem * .8);
+}
+/* ---------- */
+
+/* Login Card Form Elements */
+.loginCard input[type="text"],
+.loginCard input[type="password"],
+.loginCard input[type="email"] {
+    border: 1px solid #CECECE;
+    outline: none;
+    background: rgb(255, 255, 255);
+    padding: 1rem 1.5rem;
+    padding-left: calc(1rem * 3.5);
+    border-radius: 10px;
+    width: 100%;
+    transition: background .5s;
+}
+
+.loginCard input:focus {
+    background: white;
+}
+
+.loginCard input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    accent-color: black;
+}
+
+.loginCard button {
+    background: #2F52E0;
+    color: white;
+    padding: 1rem;
+    text-transform: uppercase;
+    border-radius: 10px;
+    border: none;
+    text-align: center;
+    letter-spacing: 1px;
+    transition: background .5s;
+}
+
+.loginCard button:hover {
+    background-color: #1f3899;
+    cursor: pointer;
+}
+
+#botonRegistro {
+    background: #2F52E0;
+    color: white;
+    padding: 1rem;
+    text-transform: uppercase;
+    border-radius: 10px;
+    border: none;
+    text-align: center;
+    letter-spacing: 1px;
+    transition: background .5s;
+}
+
+#botonRegistro:hover {
+    background-color: #1f3899;
+    cursor: pointer;
+}
+/* ---------- */
+
+/* Responsive */
+@media (max-width: 768px) {
+
+    body {
+        padding: 2rem 0;
+    }
+
+    .loginCard {
+        width: 280px;
+        padding: 2rem;
+    }
+
+}
+/* ---------- */

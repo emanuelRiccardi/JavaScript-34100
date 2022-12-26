@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/form.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,600,0,0" />
+    <title>Agregar Extintor</title>
+</head>
+
+<body class="formGridContainer">
+    <div class="formHeader">
+        <span class="empresaItemIcon material-symbols-rounded" onclick="window.location='./empresa.html';">arrow_back</span>
+    </div>
+
+    <section class="formAddExt">
+        <form action="" class="formContenido">
+            <h2 class="formTexto">Agregar Extintor</h2>
+            
+            <div class="nroext">
+                <label for="nroext">Número de Extintor:</label><br>
+                <input type="text" id="nroext" name="nroext" placeholder="Ej.624879"><br>
+            </div>
+
+    
+            <select id="tipoExt">
+                <option>Tipo de Extintor</option>
+                <option value="PBP">PBP</option>
+                <option value="CO2">C02</option>
+                <option value="AFFF">AFFF</option>
+                <option value="K">K</option>
+            </select>
+    
+            <select id="capExt">
+                <option>Capacidad</option>
+                <option value="5KG">5KG</option>
+                <option value="7KG">7KG</option>
+                <option value="10KG">10KG</option>
+            </select>
+
+            <div class="dps">
+                <label for="dps" >Número de DPS:</label><br>
+                <input type="text" id="dps" name="dps" placeholder="Ej. 1C0345069"><br><br>
+            </div>
+
+            <div class="carga">
+                <label for="carga">Venc de Carga:</label><br>
+                <input type="text" id="carga" name="carga" placeholder="Ej. 31/12/2020"><br><br>
+            </div>
+
+            <div class="fab">
+                <label for="fab">Fecha de Fabricación:</label><br>
+                <input type="text" id="fab" name="fab" placeholder="Ej. 31/12/2000"><br>
+            </div>
+
+            <div class="ph">
+                <label for="ph">Venc de PH:</label><br>
+                <input type="text" id="ph" name="ph" placeholder="Ej. 31/12/2027"><br><br>
+            </div>
+
+            <div class="ubi">
+                <label for="ubi">Ubicación:</label><br>
+                <input type="text" id="ubi" name="ubi" placeholder="Ubicación"><br>
+            </div>
+
+            <div class="emp">
+                <label for="empresa">Empresa:</label><br>
+                <input type="text" id="emp" name="emp" placeholder="Empresa"><br>
+            </div>
+
+            <div class="boton">
+                <input type="submit" value="Cargar Extintor" id="botonContenido">
+            </div>
+        </form>
+    </section>
+    
+    <script src="../js/form.js"></script>
+</body>
+</html>

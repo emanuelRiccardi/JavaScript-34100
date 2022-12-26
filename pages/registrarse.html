@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,600,0,0" />
+    <title>Registrarse</title>
+</head>
+<body class="loginBody">
+
+    <div class="loginCardContainer">
+        <div class="loginCard">
+            <div class="loginCardLogo">
+                <img src="../img/logo.png" alt="logo">
+            </div>
+            <div class="loginCardHeader">
+                <h1>Registrarse</h1>
+                <div>Ingresa tus datos para crear tu cuenta</div>
+            </div>
+            <form class="loginCardForm">
+                <div class="formItem">
+                    <span class="formItemIcon material-symbols-rounded">mail</span>
+                    <input type="text" placeholder="Correo Electrónico" id="emailFormReg" 
+                    autofocus>
+                </div>
+                <div class="formItem">
+                    <span class="formItemIcon material-symbols-rounded">lock</span>
+                    <input type="password" placeholder="Contraseña" id="passwordFormReg">
+                </div>
+                <input id="botonRegistro" type="submit" value="registrarse" onclick="guardarRegistro()">Registrarse</input>
+            </form>
+            <div class="loginCardFooter">
+                ¿Ya tienes una cuenta? <a href="./login.html">Inicia sesión</a>
+            </div>
+        </div>
+    </div>
+    <script src="../js/loginyreg.js"></script>
+</body>
+</html>

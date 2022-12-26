@@ -1,0 +1,137 @@
+@import url("reset.css");
+
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+.indexGridContainer{
+    font-family: 'Overpass', sans-serif;
+    display: grid;
+    grid-template-columns: 100px 1fr 100px;
+    grid-template-rows: 150px 75px auto;
+    grid-template-areas: 
+    ". header ."
+    ". tabs ."
+    ". items ."
+    ;
+}
+
+
+#indexHeader{
+    grid-area: header;
+}
+
+.indexHeader h1{
+    margin-top: 50px;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+
+.indexTabs{
+    grid-area: tabs;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.tab{
+    padding: 1rem 3rem 2rem 3rem;
+    background-color: #2F52E0;
+    border-radius: 10px 10px 0 0;
+}
+
+.tab a{
+    text-decoration: none;
+    color: white;
+}
+
+.tab2{
+    padding: 1rem 3rem 2rem 3rem;
+    background-color: #2F52E0;
+    border-radius: 10px 10px 0 0;
+    opacity: 0.6;
+}
+
+.tab2 a{
+    text-decoration: none;
+    color: white;
+}
+
+
+.indexItems{
+    grid-area: items;
+    background-color: #F3F3F3;
+    border-radius: 50px 50px 0 0;
+}
+
+.indexItems h2{
+    margin: 60px 0 0 60px;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.itemCell{
+    display: grid;
+    grid-template-columns: 50px 1fr 1fr 1fr 0.3fr 50px;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    ". name venc cant expand ."
+    ;
+    margin: 50px 60px 50px 60px;
+    border-radius: 10px;
+    border: 5px solid #FF715B;
+    background-color: #FFFFFF;
+}
+
+.itemText{
+    grid-area: name;
+    display: flex;
+    align-items: center;
+}
+
+.venc{
+    grid-area: venc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.venc h4{
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.cant{
+    grid-area: cant;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.cant h4{
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.itemExpand{
+    grid-area: expand;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+
+.itemIcon{  
+    font-size: 48px;
+}
+
+.itemCell2{
+    display: grid;
+    grid-template-columns: 50px 1fr 1fr 1fr 0.3fr 50px;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    ". name venc cant expand ."
+    ;
+    margin: 20px 60px 20px 60px;
+    border-radius: 10px;
+    border: 1px solid #CECECE;
+    background-color: #FFFFFF;
+}
