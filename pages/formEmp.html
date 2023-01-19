@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/forms.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,600,0,0" />
+    <title>Agregar Empresa</title>
+</head>
+<body class="formGridContainer">
+    <div class="formHeader">
+        <span class="empresaItemIcon material-symbols-rounded" onclick="window.location='./empresas.html';">arrow_back</span>
+    </div>
+
+    <section class="formAdd">
+        <form action="" class="formContenido2">
+            <h2 class="formTexto">Agregar Empresa</h2>
+            
+            <div class="nombreEmpresa">
+                <label for="nombreEmpresa">Nombre de la Empresa:</label><br>
+                <input type="text" id="nombreEmpresa" name="nombreEmpresa" placeholder="Ej.Pepsi"><br>
+            </div>
+
+            <div class="direcEmpresa">
+                <label for="direcEmpresa">Dirección de la Empresa:</label><br>
+                <input type="text" id="direcEmpresa" name="direcEmpresa" placeholder="Ej.Calle 1234"><br>
+            </div>
+
+            <div class="boton">
+                <input type="submit" value="Cargar Empresa" id="botonContenido">
+            </div>
+        </form>
+    </section>
+    
+    <script src="../js/formEmp.js"></script>
+</body>
+</html>

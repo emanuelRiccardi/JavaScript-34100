@@ -1,0 +1,12 @@
+{
+    "Empresa":
+[
+    {
+        "nombre": "Pepsi", "direccion": "3 de Febrero 5678"
+    },
+
+    {
+        "nombre": "Antares", "direccion": "San Juan 3024"
+    }
+]
+}

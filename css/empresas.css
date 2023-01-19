@@ -61,44 +61,94 @@
     grid-area: items;
     background-color: #F3F3F3;
     border-radius: 50px 50px 0 0;
+    padding-top: 50px;
 }
 
-.empSearchBar {
+.empFilters {
     width: 100%;
     display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+.filterText{
+    margin: 30px 0px 15px 60px;
 }
 
-.empSearchBar div {
-    margin: 30px 60px 30px 0;
+.filtersBox {
+    margin: 0px 60px 30px 60px;
     display: flex;
     flex-direction: center;
 }
 
-
-.floating-container {
-    position: fixed;
-    width: 100px;
-    height: 100px;
-    bottom: 0;
-    right: 0;
-    margin: 35px 25px;
+.searchNumber{
+    border-radius: 4px;
+    height: 30px;
+    border: 1px solid rgba(114, 117, 119, 0.658);
+    margin-right: 15px;
 }
 
-.floating-container:hover {
-    height: 300px;
+.empItemIcon{
+    margin-right: 15px;
 }
 
-.floating-container .floating-button {
+#tooltip {
+    background: #333;
+    color: white;
+    font-weight: bold;
+    padding: 4px 8px;
+    font-size: 13px;
+    border-radius: 4px;
+    display: none;
+}
+
+#tooltip[data-show] {
+    display: block;
+}
+
+#arrow,
+#arrow::before {
     position: absolute;
+    width: 8px;
+    height: 8px;
+    background: inherit;
+}
+
+#arrow {
+    visibility: hidden;
+}
+
+#arrow::before {
+    visibility: visible;
+    content: '';
+    transform: rotate(45deg);
+}
+
+#tooltip[data-popper-placement^='top']>#arrow {
+    bottom: -4px;
+}
+
+#tooltip[data-popper-placement^='bottom']>#arrow {
+    top: -4px;
+}
+
+#tooltip[data-popper-placement^='left']>#arrow {
+    right: -4px;
+}
+
+#tooltip[data-popper-placement^='right']>#arrow {
+    left: -4px;
+}
+
+.floatingButton {
+    position: fixed;
     width: 65px;
     height: 65px;
     background: #2F52E0;
-    bottom: 0;
+    bottom: +10px;
     border-radius: 50%;
-    left: 0;
-    right: 0;
+    border: 0px solid transparent;
+    right: 50px;
     margin: auto;
     color: white;
     line-height: 65px;

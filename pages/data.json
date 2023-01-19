@@ -1,0 +1,65 @@
+{
+    "Extintor":
+[
+    {
+        "numSerie":"450895", 
+        "dps": "C042300546", 
+        "tipo": "PBP", 
+        "peso": "5KG", 
+        "fechaFab": "2010/07/30", 
+        "fechaVencCarga": "2023/12/31", 
+        "fechaVencPH": "2025/12/31", 
+        "ubicacion" :"entrada", 
+        "empresa": "Pepsi"
+    },
+
+    {
+        "numSerie":"890562", 
+        "dps":"C042300845", 
+        "tipo":"PBP", 
+        "peso":"10KG", 
+        "fechaFab":"2012/12/31", 
+        "fechaVencCarga":"2023/12/31", 
+        "fechaVencPH":"2027/12/31", 
+        "ubicacion":"entrada", 
+        "empresa":"Pepsi"
+    },
+
+    {
+        "numSerie":"45432", 
+        "dps":"C042302648", 
+        "tipo":"PBP", 
+        "peso":"5KG", 
+        "fechaFab":"2008/01/30", 
+        "fechaVencCarga":"2023/11/30", 
+        "fechaVencPH":"2023/11/30", 
+        "ubicacion":"cocina", 
+        "empresa":"Antares"
+    },
+
+    {
+        "numSerie":"6458", 
+        "dps":"C042373402", 
+        "tipo":"K", 
+        "peso":"5KG", 
+        "fechaFab":"2010/10/01", 
+        "fechaVencCarga":"2023/10/01", 
+        "fechaVencPH":"2025/10/01", 
+        "ubicacion":"cocina", 
+        "empresa":"Antares"
+    },
+
+    {
+        "numSerie":"6049", 
+        "dps":"C042343124", 
+        "tipo":"CO2", 
+        "peso":"3,5KG", 
+        "fechaFab":"2005/05/01", 
+        "fechaVencCarga":"2023/05/01", 
+        "fechaVencPH":"2025/05/01", 
+        "ubicacion":"computadoras", 
+        "empresa":"Antares"
+    }
+
+]
+}

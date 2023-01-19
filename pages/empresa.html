@@ -14,20 +14,19 @@
     <div id="indexHeader">
         <span class="empresaItemIcon material-symbols-rounded" onclick="window.location='./empresas.html';">arrow_back</span>
         <div class="empresaHeaderInfo">
-            <h1>Nombre Empresa</h1>
-            <h2>dirreción empresa</h2>
+            <h1 id="nombreEmpresa"></h1>
+            <h2 id="dirEmpresa"></h2>
         </div>
     </div>
 
     <section class="empresaItems">
-        <div class="itemsHeader">
-            <h2>Control de Extintores</h2>
-            <div class="empresaSearchBar">
-                <div>
-                    <input type="search" placeholder="Buscar por nombre">
-                </div>
+        <div class="empFilters">
+            <h3 class="filterText">Filtrar por:</h3>
+            <div class="filtersBox">
+                <input class="searchNumber" id="filterNumber" type="search" placeholder="Buscar por número">
+                <button id="eraseFilter">Eliminar Búsqueda</button>
             </div>
-        </div>
+    </div>
 
         <div id="items">
 
@@ -35,41 +34,19 @@
             
         </div>
 
-        <!-- <div class="itemCell4">
-
-            <div class="itemSerial">
-                <h4>Nro. de Serie:</h4>
-                <h3>216845</h3>
-            </div>
-
-            <div class="itemType">
-                <h4>Tipo</h4>
-                <h3>PBP - 5KG</h3>
-            </div>
-
-            <div class="itemState">
-                <h4>Estado</h4>
-                <h3>VENCIDO</h3>
-            </div>
-
-            <div class="itemLocation">
-                <h4>Ubicación</h4>
-                <h3>Entrada</h3>
-            </div>
-
-            <div class="itemMore">
-                <span class="itemIcon material-symbols-rounded">more_vert</span>
-            </div>
-            
-        </div> -->
-
     </section>
 
-    <div class="floating-container" onclick="window.location='./form.html';">
-        <div class="floating-button">+</div> 
+    <button id="popperButton" class="floatingButton" aria-describedby="tooltip" onclick="window.location = '../pages/form.html';">+</button>
+    <div id="tooltip" role="tooltip">
+        Agregar Extintor
+        <div id="arrow" data-popper-arrow></div>
     </div>
-
+    
     <script src="../js/empresa.js"></script>
+    <script src="../js/form.js"></script>
+    <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.js"></script>
+    <script src="../js/popper.js"></script>
+    
 </body>
 
 </html>

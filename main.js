@@ -9,6 +9,14 @@
 // MOSTRAR SOLO EXTINTORES VENCIDOS  
 let divExtVencidos = document.querySelector("#itemsIndex")
 
+// FETCH JSON
+const obtenerDatos = ()=>{
+    fetch("./pages/data.json")
+    .then(response => response.json())
+    .then(resultado => JSON.parse(localStorage.getItem("extintores")) ||localStorage.setItem("extintores", JSON.stringify(resultado.Extintor)))
+    .then(mostrarExtintores)
+}
+
 const mostrarExtintores = (empresa, vencidos) => {
     let extintoresGuardados = JSON.parse(localStorage.getItem("extintores"));
 
@@ -20,13 +28,19 @@ const mostrarExtintores = (empresa, vencidos) => {
             divExtVencidos.innerHTML+= `
             <div class="itemCell">
             <h3 class="itemText">${extintor.empresa}</h3>
+            
+            <div class="numSerie">
+                <h4>Num. Serie</h4>
+                <h3 class="itemNumSerie">${extintor.numSerie}</h3>
+            </div>
+            
             <div class="venc">
                 <h4>Venció el:</h4>
                 <h3 class="itemText">${extintor.fechaVencCarga}</h3>
             </div>
         
             <div class="itemExpand">
-                <span class="itemIcon material-symbols-rounded">expand_more</span>
+                <span class="itemIcon material-symbols-rounded">arrow_forward_ios</span>
             </div>
             
             </div>
@@ -37,7 +51,7 @@ const mostrarExtintores = (empresa, vencidos) => {
 }
 
 
-window.onload = mostrarExtintores;
+window.onload = obtenerDatos;
 
 
 
@@ -49,46 +63,5 @@ window.onload = mostrarExtintores;
 
 
 
-
-
-
-
-    //<====================================== FILTROS (TODAVÍA NO ESTÁN EN USO)=======================================================================================================================>
-
-// BUSCAR EXTINTOR POR NUMERO
-// function buscarExt() {
-//     let busquedaUsuario = prompt("Número del extintor")
-//     const busqueda = listaExtintores.find(extintor => extintor.numSerie == busquedaUsuario);
-//     console.log(busqueda)
-// }
-
-// // FILTRAR POR TIPO DE EXTINTOR
-// function filtrarTipo() {
-//     let filtroUsuario = prompt("filtrar por tipo de extitor:").toUpperCase();
-//     const filtraPorTipo = listaExtintores.filter(extintor => extintor.tipo == filtroUsuario)
-//     console.log(filtraPorTipo)
-// }
-
-// // FILTRAR POR PESO
-// function filtrarPeso() {
-//     let filtroUsuario = prompt("filtrar por peso de extitor:").toUpperCase();
-//     const filtraPorPeso = listaExtintores.filter(extintor => extintor.peso == filtroUsuario)
-//     console.log(filtraPorPeso)
-// }
-
-// // ORDERNAR POR FECHA
-// function ordernarPorFecha() {
-//     listaExtintores.sort(function(a,b){
-//         if (a.fechaFab > b.fechaFab){
-//             return 1
-//         }
-//         if (a.fechaFab < b.fechaFab){
-//             return -1
-//         }
-//         return 0;
-//     });
-    
-//     console.log(listaExtintores)
-// }
 
 

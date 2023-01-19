@@ -12,7 +12,7 @@
 
 <body class="empGridContainer">
     <div id="indexHeader">
-        <!-- <h1>Te damos la bienvenida, Marcelo</h1> -->
+
     </div>
     <div class="empTabs">
         <div class="emptab">
@@ -23,71 +23,25 @@
         </div>
     </div>
     <section class="empItems">
-        <div class="empSearchBar">
-            <div>
-                <input type="search" placeholder="Buscar por nombre">
-                <span class="empItemIcon material-symbols-rounded">filter_list</span>
-            </div>
-        </div>
-
-        <div class="itemCell2" id="empresa1">
-            <h3 class="itemText">Pepsi</h3>
-            <div class="venc">
-                <h4>Vencen el:</h4>
-                <h3 class="itemText">31/10/22</h3>
-            </div>
-
-            <div class="cant">
-                <h4>Cant. a vencer:</h4>
-                <h3 class="itemText">10 extintores</h3>
-            </div>
-        </div>
         
-        <div class="itemCell2" id="empresa2">
-            <h3 class="itemText">Antares</h3>
-            <div class="venc">
-                <h4>Vencen el:</h4>
-                <h3 class="itemText">31/10/22</h3>
-            </div>
 
-            <div class="cant">
-                <h4>Cant. a vencer:</h4>
-                <h3 class="itemText">10 extintores</h3>
-            </div>
+        <div id="empItems">
+
         </div>
 
-        <div class="itemCell2">
-            <h3 class="itemText">Nombre de Empresa</h3>
-            <div class="venc">
-                <h4>Vencen el:</h4>
-                <h3 class="itemText">31/10/22</h3>
-            </div>
-
-            <div class="cant">
-                <h4>Cant. a vencer:</h4>
-                <h3 class="itemText">10 extintores</h3>
-            </div>
-        </div>
-
-        <div class="itemCell2">
-            <h3 class="itemText">Nombre de Empresa</h3>
-            <div class="venc">
-                <h4>Vencen el:</h4>
-                <h3 class="itemText">31/10/22</h3>
-            </div>
-
-            <div class="cant">
-                <h4>Cant. a vencer:</h4>
-                <h3 class="itemText">10 extintores</h3>
-            </div>
-        </div>
     </section>
 
-    <div class="floating-container">
-        <div class="floating-button">+</div> 
-    </div>
 
+    <button id="popperButton" class="floatingButton" aria-describedby="tooltip" onclick="window.location = '../pages/formEmp.html';">+</button>
+    <div id="tooltip" role="tooltip">
+        Agregar Empresa
+        <div id="arrow" data-popper-arrow></div>
+    </div>
+    
+
+    <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.js"></script>
     <script src="../js/empresas.js"></script>
+    <script src="../js/popper.js"></script>
 </body>
 
 </html>
